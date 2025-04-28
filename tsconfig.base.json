@@ -10,11 +10,27 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "shop-cart/Button": [
+        "apps/shop-cart/src/app/components/button.tsx"
+      ],
+      "shop-cart/Module": [
+        "apps/shop-cart/src/remote-entry.ts"
+      ],
+      "remote_app/Button": [
+        "apps/remote/src/app/components/button.tsx"
+      ],
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }

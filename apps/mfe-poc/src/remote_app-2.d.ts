@@ -1,0 +1,1 @@
+declare module 'remote_app-2/Header';

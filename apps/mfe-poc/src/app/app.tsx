@@ -1,12 +1,20 @@
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
+import { lazy } from 'react';
 
 import NxWelcome from './nx-welcome';
+
+const Button = lazy(() => import('remote_app/Button'));
+const HeaderFromHost2 = lazy(() => import('remote_app-2/Header'));
+
+console.log(HeaderFromHost2);
 
 export function App() {
   return (
     <div>
-      <NxWelcome title="mfe-poc" />
+      <h1>Hello, I am the Host :)</h1>
+      <HeaderFromHost2 />
+
+      <Button />
     </div>
   );
 }
